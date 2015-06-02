@@ -70,7 +70,7 @@ describe("About Arrays", function() {
 
     var copyOfArray = array.slice();
     copyOfArray[3] = "changed in copyOfArray";
-    expect(array[3]).toBe("three");
+    expect(array[3]).toBe("three"); // Array.prototype.slice does not alter the original array
   });
 
   it("should push and pop", function () {
